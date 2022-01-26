@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+body{
+    margin:0;
+    height:100%;
+}
+
+.container{
+    width:100%;
+    padding-left:3%;
+    padding-right:3%;
+    
+}
+/*--- header ---*/
+header{
+    height:60px;
+    width:100%;
+    background-color: rgba(212, 186, 153, 0.842);
+    margin:0;
+    
+    
+}
+.header-left{
+    float:left;
+    padding:10px 0 0 0;
+}
+.header-logo{
+    width:50px
+    
+}
+.menu-icon{
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display:none;
+}
+#menu-icon:hover{
+    cursor: pointer;
+}
+.header-right{
+    float:right;
+    margin-right:50px;
+}
+.header-right a{
+    text-decoration:none;
+    color:rgba(255, 255, 255, 0.7);
+    font-family:Khmer MN;
+    font-size: 25px;
+}
+.header-right li{
+    list-style: none;
+    padding-left:50px;
+    float:left;
+    font-size:20px;
+    line-height:60px;
+}
+.header-right a:hover{
+    color:white;
+}
+
+.hide-menu{
+    text-align:center;
+    z-index:99;
+    color:white;
+    font-family:Khmer MN;
+    background-color:rgb(212, 186, 153);
+    width:100%;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:100%;
+    /**/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.hide-menu a{
+    text-align:center;
+    font-size:24px;
+    line-height: 50px;
+}
+.fa-times{
+    text-align:right;
+    font-size: 25px;
+    position:fixed;
+    top:20px;
+    right:21.5px;
+    display:none;
+}
+.fa-times:hover{
+    cursor:pointer;
+}
+/*--- TOP ---*/
+.top-wrapper{
+    margin:0 auto;
+    color:rgb(78, 78, 78);
+    height:628px;
+    background-size:cover;
+    background-image: url(../img/background.jpg);
+    text-align: center;
+    padding-top:50px;
+    
+}
+.content{
+    background-color: rgba(212, 186, 153, 0.9);
+    margin:0 auto;
+    padding-top:25px;
+    height:350px;
+    width:60%;
+    
+}
+
+.content h1{
+    font-family:Khmer MN;
+    font-size:65px;
+    font-weight: lighter;
+    
+}
+.content h2{
+    font-size: 20px;
+    font-family: zen-old-mincho, sans-serif;
+    font-weight: 400;  
+    font-style: normal;
+    margin-bottom:20px;
+}
+.content p{
+    font-size:15px;
+    font-family:zen-old-mincho, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu-btn a{
+    text-decoration:none;
+}
+.menu-btn{
+    margin-top:10px;
+    color:white;
+    background-color:	rgb(248, 144, 74);
+    display:inline-block;
+    width:6em;
+    height:2em;
+    font-family:Khmer MN;
+    font-size:20px;
+    line-height:2em;
+    border-radius:5px;
+}
+.menu-btn:hover{
+    background-color:rgba(248, 144, 74, 0.822);
+}
+/*--- BOTTOM ---*/
+.bottom-wrapper{
+    padding: 20px 0;
+    color:rgb(78, 78, 78);
+}
+.bottom-wrapper h4{
+    text-align: center;
+    font-family:zen-old-mincho, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+}
+.bottom-wrapper h5{
+    font-weight:bold;
+}
+.bottom-wrapper p{
+    font-size:14px;
+}
+span {
+    font-family:Khmer MN;
+}
+.coffees{
+    display:flex;
+    justify-content: center;
+    margin-bottom:10%;
+}
+
+.coffee{
+    width:30%;
+    padding-right:5%;
+    font-family:zen-old-mincho, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.coffee img{
+    width:100%;
+}
+.kodawaris{
+    display:flex;
+    justify-content: center;
+}
+.kodawari{
+    width:30%;
+    padding-right:5%;
+    font-family:zen-old-mincho, sans-serif;
+    font-weight: 400; 
+    font-style: normal;
+}
+.kodawari img{
+    width:100%
+}
+
+/*--- footer ---*/
+footer{
+    width:100%;
+    height:100px;
+    border-top:2px solid rgb(230, 180, 53);
+    font-family:Khmer MN;
+}
+
+.footer-left{
+    float:left;
+}
+.footer-logo{
+    margin-top:15px;
+    width:65px;
+}
+.footer-right{
+    float:right;
+    margin-top: 10px;
+}
+.footer-right li{
+    list-style: none;
+    color:rgb(78, 78, 78)
+}
+/*--- tablet ---*/
+@media(max-width:1000px){
+    .coffee{
+        width:100%;
+    }
+    .kodawari{
+        width:100%;
+    }
+}
+
+/*--- smartphone ---*/
+@media(max-width:670px){
+    .header-right{
+        display:none;
+    }
+    .menu-icon{
+        display:block;
+    }
+    .coffee{
+        width:100%;
+    }
+    .kodawari{
+        width:100%;
+    }
+}
