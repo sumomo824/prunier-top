@@ -238,6 +238,7 @@ footer{
 @media(max-width:670px){
     .top-wrapper{
         height:500px;
+    }
     .header-right{
         display:none;
     }
